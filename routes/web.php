@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+})->middleware(['auth'])->name('dashboard-index');
 
 require __DIR__.'/auth.php';
+
+
+
+route::get('/', [PagesController::class, 'home'])->name('home-index');
+route::get('/sluzby', [PagesController::class, 'services'])->name('services');
+route::get('/kontakty', [PagesController::class, 'contacts'])->name('contacts');
+route::get('/o-mne', [PagesController::class, 'aboutMe'])->name('aboutMe');
+route::get('/nabidky', [offersController::class, 'offers'])->name('offers');
