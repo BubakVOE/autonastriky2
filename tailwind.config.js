@@ -10,13 +10,17 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                Poppins: 'Poppins, sans-serif',
+                Roboto: 'Roboto, sans-serif',
+                Rubik: 'Rubik, sans-serif',
             },
 
             colors: {
                 layout: {
-                  'orange' : '#FECA53',
-                  'light' : '#FFF849',
+                  'black' : '#161616',
+                  'gray' : '#4F4F4F',
+                  'red' : '#FF2F00',
+                  'white' : '#FFFCF2',
                 },
                 blue: {
                   'custom' : '#112B4C',
