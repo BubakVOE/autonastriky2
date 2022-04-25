@@ -8,8 +8,7 @@
 
     <x-home.gallery/>
 
-    <x-home.aboutme/>
+    <x-home.contacts/>
 
-    <x-home.references/>
 
 @endsection

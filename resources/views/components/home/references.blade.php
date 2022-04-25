@@ -1,4 +1,4 @@
-<section class="py-24">
+{{-- <section class="py-24">
     <div class="w-full ">
         <div class="text-left w-10/12 mx-auto ">
             <h1 class="font-Rubik font-bold text-blue-custom text-2xl border-b border-black">Reference</h1>
@@ -29,4 +29,4 @@
 
 
     </div>
-</section>
+</section> --}}

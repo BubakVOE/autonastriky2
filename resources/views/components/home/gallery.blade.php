@@ -1,12 +1,10 @@
-<section class="py-24  ">
-    <div class="w-11/12 mx-auto  relative ">
-
-        <div class="absolute hidden xl:flex  ">
-            <img class="w-4/12 " src="{{ asset('src/bg/Iphone-bg_column.png') }}" >
-        </div>
+<section class="py-24">
+    <div class="w-10/12 mx-auto shadow-2xl shadow-layout-gray bg-layout-lightgray py-10 rounded-2xl  ">
 
         <div class="text-center">
-            <h1 class="font-Rubik font-bold text-blue-custom text-3xl ">Nabídky k prodeji</h1>
+            <h1 class="text-lg tracking-tight font-extrabold sm:text-1xl md:text-4xl uppercase font-poppins text-transparent bg-clip-text bg-gradient-to-r from-layout-red to-layout-gray">
+                Nejnovější opravy
+            </h1>
         </div>
 
         <div class=" max-w-2xl mx-auto py-16 sm:py-12 lg:max-w-7xl  ">
@@ -161,14 +159,12 @@
             </div>
         </div>
 
-        <div class="w-full text-center relative h-20 ">
-            <a href="{{ route('offers') }}" class="uppercase font-bold text-xl font-Rubik text-yellow-custom bg-blue-custom px-5 py-3 rounded-sm">
+        <div class="text-center hover:scale-105 transition duration-500 ease-in-out w-2/12 mx-auto bg-layout-red bg-opacity-80 hover:bg-opacity-100 py-2  ">
+            <a href="{{ route('offers') }}" class="font-Rubik font-bold uppercase rounded text-2xl text-layout-white ">
                 Zobrazit více
             </a>
 
-            <div class=" hidden xl:flex justify-end relative bottom-52   ">
-                <img class="w-4/12" src="{{ asset('src/bg/Iphone-bg_cross.png') }}" >
-            </div>
+
         </div>
 
     </div>

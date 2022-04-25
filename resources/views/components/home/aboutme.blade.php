@@ -1,4 +1,4 @@
-<section class="py-24 ">
+{{-- <section class="py-24 ">
     <div class="w-10/12 mx-auto">
 
         <div class="text-left ">
@@ -48,4 +48,4 @@
         </div>
 
     </div>
-</section>
+</section> --}}

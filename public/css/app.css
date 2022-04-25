@@ -691,6 +691,21 @@ select {
 .top-96 {
   top: 24rem;
 }
+.top-1 {
+  top: 0.25rem;
+}
+.-bottom-10 {
+  bottom: -2.5rem;
+}
+.-bottom-20 {
+  bottom: -5rem;
+}
+.-bottom-32 {
+  bottom: -8rem;
+}
+.-bottom-44 {
+  bottom: -11rem;
+}
 .z-0 {
   z-index: 0;
 }
@@ -702,6 +717,12 @@ select {
 }
 .z-50 {
   z-index: 50;
+}
+.-z-10 {
+  z-index: -10;
+}
+.-z-20 {
+  z-index: -20;
 }
 .-m-3 {
   margin: -0.75rem;
@@ -802,6 +823,12 @@ select {
 .mt-20 {
   margin-top: 5rem;
 }
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.ml-16 {
+  margin-left: 4rem;
+}
 .block {
   display: block;
 }
@@ -846,6 +873,9 @@ select {
 }
 .h-full {
   height: 100%;
+}
+.h-12 {
+  height: 3rem;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -918,6 +948,9 @@ select {
 }
 .w-2\/12 {
   width: 16.666667%;
+}
+.w-12 {
+  width: 3rem;
 }
 .min-w-0 {
   min-width: 0px;
@@ -1002,6 +1035,9 @@ select {
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -1289,6 +1325,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(79 70 229 / var(--tw-bg-opacity));
 }
+.bg-indigo-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+}
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
@@ -1519,6 +1559,12 @@ select {
 .leading-tight {
   line-height: 1.25;
 }
+.leading-8 {
+  line-height: 2rem;
+}
+.leading-6 {
+  line-height: 1.5rem;
+}
 .tracking-tight {
   letter-spacing: -0.025em;
 }
@@ -1527,6 +1573,9 @@ select {
 }
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
 }
 .text-gray-500 {
   --tw-text-opacity: 1;
@@ -2079,6 +2128,11 @@ select {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 @media (min-width: 768px) {
 
@@ -2102,6 +2156,10 @@ select {
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -2118,6 +2176,18 @@ select {
     flex: 1 1 0%;
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2126,10 +2196,25 @@ select {
     justify-content: space-between;
   }
 
+  .md\:gap-x-8 {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+
+  .md\:gap-y-10 {
+    row-gap: 2.5rem;
+  }
+
   .md\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .md\:text-8xl {
@@ -2143,6 +2228,11 @@ select {
   }
 }
 @media (min-width: 1024px) {
+
+  .lg\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .lg\:flex {
     display: flex;
@@ -2213,6 +2303,10 @@ select {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:text-center {
+    text-align: center;
   }
 }
 @media (min-width: 1280px) {

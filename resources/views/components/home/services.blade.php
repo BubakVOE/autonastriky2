@@ -1,4 +1,12 @@
-<section class="pb-24 pt-16 ">
+<section class="pb-24 pt-16 relative  ">
+
+    <div class="absolute -bottom-44 -z-10">
+        <img class="w-4/12" src="{{ asset('src/bg/Iphone-bg_cross.png') }}" >
+    </div>
+    
+{{-- <div class="absolute">
+    <img class="w-4/12 " src="{{ asset('src/bg/Iphone-bg_column.png') }}" >
+</div> --}}
 
     <div class="w-10/12 mx-auto shadow-2xl shadow-layout-gray bg-layout-lightgray py-10 rounded-2xl  ">
         <div class="text-center ">

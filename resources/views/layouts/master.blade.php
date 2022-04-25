@@ -24,7 +24,7 @@
             @yield('content')
         </div>
 
-        <div class="bg-gray-old">
+        <div class="">
             <x-layout.footer/>
         </div>
 
