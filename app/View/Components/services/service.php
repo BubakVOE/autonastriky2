@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class service extends Component
 {
+    public $text;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($text)
     {
-        //
+        $this->text=$text;
     }
 
     /**

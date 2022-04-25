@@ -19,6 +19,7 @@ module.exports = {
                 layout: {
                   'black' : '#161616',
                   'gray' : '#4F4F4F',
+                  'lightgray' : '#F3F0F1',
                   'red' : '#FF2F00',
                   'white' : '#FFFCF2',
                 },
@@ -26,6 +27,11 @@ module.exports = {
                   'custom' : '#112B4C',
                 },
 
+              },
+
+            boxShadow: {
+                layoutInner: 'inset 15px 15px 34px #b6b6b6, inset -15px -15px 34px #fcfcfc',
+                inSmaller: 'inset 3px 3px 13px #b3b6bb, inset -3px -3px 13px #D2D6DC',
               },
 
             height: {
