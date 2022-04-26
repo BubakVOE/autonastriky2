@@ -56,83 +56,121 @@
           }
         }
 
+    // smooth move
+        function introduction() {
+        document.getElementById("introduction").scrollIntoView();
+        }
 
+        function services() {
+        document.getElementById("services").scrollIntoView();
+        }
 
-            function hamburgerToggle() {
-                var x = document.getElementById("hamburgerLinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
+        function gallery() {
+        document.getElementById("gallery").scrollIntoView();
+        }
+
+        function contacts() {
+        document.getElementById("contacts").scrollIntoView();
+        }
+
+    // Get the modal
+        var opacity = document.getElementById("Opacity");
+
+        var btn = document.getElementById("modalBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            opacity.style.display = "flex";
+        }
+
+        span.onclick = function() {
+            opacity.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == opacity) {
+            opacity.style.display = "none";
             }
-
-            function champToggle() {
-                var x = document.getElementById("champLinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-
-            function otherToggle() {
-                var x = document.getElementById("otherLinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-
-            function vipToggle() {
-                var x = document.getElementById("vipLinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-
-            function userToggle() {
-                var x = document.getElementById("userLinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
+        }
 
 
-            function mobileToggle() {
-                var x = document.getElementById("mobileToggles");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                    x.style.backgroundColor = "lightblue";
-                } else {
-                    x.style.display = "block";
-                }
-            }
+
+        // function hamburgerToggle() {
+        //         var x = document.getElementById("hamburgerLinks");
+        //         if (x.style.display === "block") {
+        //             x.style.display = "none";
+        //         } else {
+        //             x.style.display = "block";
+        //         }
+        //     }
+
+        //     function champToggle() {
+        //         var x = document.getElementById("champLinks");
+        //         if (x.style.display === "block") {
+        //             x.style.display = "none";
+        //         } else {
+        //             x.style.display = "block";
+        //         }
+        //     }
+
+        //     function otherToggle() {
+        //         var x = document.getElementById("otherLinks");
+        //         if (x.style.display === "block") {
+        //             x.style.display = "none";
+        //         } else {
+        //             x.style.display = "block";
+        //         }
+        //     }
+
+        //     function vipToggle() {
+        //         var x = document.getElementById("vipLinks");
+        //         if (x.style.display === "block") {
+        //             x.style.display = "none";
+        //         } else {
+        //             x.style.display = "block";
+        //         }
+        //     }
+
+        //     function userToggle() {
+        //         var x = document.getElementById("userLinks");
+        //         if (x.style.display === "block") {
+        //             x.style.display = "none";
+        //         } else {
+        //             x.style.display = "block";
+        //         }
+        //     }
 
 
-            function colorToggle() {
-                var x = document.getElementById("colorToggles");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
+        //     function mobileToggle() {
+        //         var x = document.getElementById("mobileToggles");
+        //         if (x.style.display === "block") {
+        //             x.style.display = "none";
+        //             x.style.backgroundColor = "lightblue";
+        //         } else {
+        //             x.style.display = "block";
+        //         }
+        //     }
 
 
-            function houseToggle() {
-                var x = document.getElementById("houseToggles");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
+        //     function colorToggle() {
+        //         var x = document.getElementById("colorToggles");
+        //         if (x.style.display === "block") {
+        //             x.style.display = "none";
+        //         } else {
+        //             x.style.display = "block";
+        //         }
+        //     }
+
+
+        //     function houseToggle() {
+        //         var x = document.getElementById("houseToggles");
+        //         if (x.style.display === "block") {
+        //             x.style.display = "none";
+        //         } else {
+        //             x.style.display = "block";
+        //         }
+        //     }
 
 
         </script>

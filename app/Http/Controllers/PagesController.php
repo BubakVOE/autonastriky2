@@ -18,6 +18,11 @@ class pagesController extends Controller
         return view('pages.services');
     }
 
+    public function gallery()
+    {
+        return view('pages.contacts');
+    }
+
     public function contacts()
     {
         return view('pages.contacts');

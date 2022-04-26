@@ -1,36 +1,36 @@
-<section class="h-screen relative grid grid-cols-1 place-items-end items-center"
+<section id="introduction" class="h-screen relative grid grid-cols-1 place-items-end items-center"
                 style="background-image: linear-gradient(to bottom right, rgba(255, 47, 0, 0.98), rgba(248, 149, 0, 0.397) , rgba(10, 10, 10, 0.397)); ">
     <div class="grid grid-cols-2 w-11/12">
-        <div class="space-y-5 w-full text-center relative left-20 ">
+        <div class="space-y-5 w-full text-center relative left-28 ">
 
             <div>
                 <h1 class="font-Rubik font-bold text-layout-gray text-md ">Přátelský a férový autoservis</h1>
             </div>
 
             <div>
-                <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-8xl uppercase font-poppins text-transparent bg-clip-text bg-gradient-to-l from-layout-red to-layout-gray">
+                <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-7xl uppercase font-poppins text-transparent bg-clip-text bg-gradient-to-l from-layout-red to-layout-gray">
                     <span class="block md:inline">Nástřiky</span>
-                    <span class="block md:inline  ">dutin</span>
+                    <span class="block md:inline  ">podvozku</span>
                 </h1>
             </div>
 
             <div class="grid grid-cols-2">
                 <div class="space-x-2 flex items-center justify-center">
                     <a class="font-Rubik font-bold uppercase rounded px-4 py-2 text-2xl border-2 text-layout-white bg-layout-red bg-opacity-80 hover:bg-opacity-100 transition duration-500 ease-in-out"
-                        href="">
-                        Sejít se !
+                        href="{{ route('services') }}">
+                        Služby !
                     </a>
 
                     <a class="font-Rubik font-bold uppercase rounded px-4 py-2 text-2xl border-2 text-layout-red border-layout-red hover:bg-layout-white transition duration-500 ease-in-out"
-                        href="">
-                        Nabídky
+                        href="{{ route('gallery') }}">
+                        galerie
                     </a>
                 </div>
 
                 <div class="relative right-10 ">
                     <div class="space-y-2 bg-layout-gray bg-opacity-40 p-3 rounded-lg">
-                        <h2 class="text-left text-xl font-Rubik flex-wrap">
-                            Nabízíme spoust služeb od <span class="font-bold">nástřiku dutin</span>, <span class="font-bold">přezutí pneumatik</span> až po <span class="font-bold">umytí auta</span>
+                        <h2 class="text-left text-lg font-Rubik flex-wrap">
+                            Nabízíme spoust služeb od <span class="font-bold">nástřiku podvozku</span>, <span class="font-bold">přezutí pneumatik</span> až po <span class="font-bold">umytí auta</span>
                         </h2>
 
                         <p class="text-left flex-wrap">
@@ -57,58 +57,6 @@
         </div>
     </div>
 
-    <div class="absolute top-1/2 transform -translate-y-1/2 left-0 p-2 flex flex-col items-end justify-center">
-        <div class="space-y-5 backdrop-filter backdrop-blur bg-layout-gray bg-opacity-30 py-3 px-10 rounded-lg border-2 border-black ">
-
-            <li onclick='posunHome()'
-                class="flex items-center hover:bg-opacity-40 hover:bg-layout-black group rounded-md p-1 cursor-pointer">
-
-                <svg class="flex-shrink-0 h-6 w-6 text-yellow-custom" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-                <span class="ml-3 font-rubik text-base font-medium text-gray-900 tracking-widest">
-                    Domů
-                </span>
-            </li>
-
-            <li onclick='posunHome()'
-                class="flex items-center hover:bg-opacity-40 hover:bg-layout-black group rounded-md p-1 cursor-pointer">
-
-                <svg class="flex-shrink-0 h-6 w-6 text-black group-hover:text-yellow-custom" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
-                </svg>
-
-                <span class="ml-3 font-rubik text-base font-medium text-gray-900">
-                    Nabídky
-                </span>
-            </li>
-
-            <li onclick='posunHome()'
-                class="flex items-center hover:bg-opacity-40 hover:bg-layout-black group rounded-md p-1 cursor-pointer">
-
-                <svg class="flex-shrink-0 h-6 w-6 text-black group-hover:text-yellow-custom" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                </svg>
-
-                <span class="ml-3 font-rubik text-base font-medium text-gray-900">
-                    Kontakty
-                </span>
-            </li>
-
-            <li onclick='posunHome()'
-                class="flex items-center hover:bg-opacity-40 hover:bg-layout-black group rounded-md p-1 cursor-pointer">
-
-                <svg class="flex-shrink-0 h-6 w-6 text-black group-hover:text-yellow-custom" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-
-                <span class="ml-3 font-rubik text-base font-medium text-gray-900">
-                    O mně
-                </span>
-            </li>
-        </div>
-
-    </div>
 
     <div class="absolute bottom-0 right-0   ">
         <div class="border-2 border-black grid grid-cols-3 place-items-center p-3 rounded-tl-xl bg-layout-gray bg-opacity-40 backdrop-filter backdrop-blur-lg divide-x divide-layout-black ">

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ModalController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 
@@ -26,6 +27,8 @@ require __DIR__.'/auth.php';
 
 route::get('/', [PagesController::class, 'home'])->name('home-index');
 route::get('/sluzby', [PagesController::class, 'services'])->name('services');
+route::get('/galerie', [PagesController::class, 'gallery'])->name('gallery');
 route::get('/kontakty', [PagesController::class, 'contacts'])->name('contacts');
 route::get('/o-mne', [PagesController::class, 'aboutMe'])->name('aboutMe');
-route::get('/nabidky', [offersController::class, 'offers'])->name('offers');
+
+route::post('rezervace/store', [ModalController::class, 'store'])->name('rezervace-store');

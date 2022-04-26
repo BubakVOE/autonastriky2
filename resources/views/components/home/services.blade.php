@@ -1,14 +1,14 @@
-<section class="pb-24 pt-16 relative  ">
+<section id="services" class="pb-24 pt-16 relative  ">
 
     <div class="absolute -bottom-44 -z-10">
         <img class="w-4/12" src="{{ asset('src/bg/Iphone-bg_cross.png') }}" >
     </div>
-    
+
 {{-- <div class="absolute">
     <img class="w-4/12 " src="{{ asset('src/bg/Iphone-bg_column.png') }}" >
 </div> --}}
 
-    <div class="w-10/12 mx-auto shadow-2xl shadow-layout-gray bg-layout-lightgray py-10 rounded-2xl  ">
+    <div class="w-9/12 mx-auto shadow-2xl shadow-layout-gray bg-layout-lightgray py-10 rounded-2xl  ">
         <div class="text-center ">
             <h1 class="text-lg tracking-tight font-extrabold sm:text-1xl md:text-4xl uppercase font-poppins text-transparent bg-clip-text bg-gradient-to-r from-layout-red to-layout-gray">
                 Práce, které nabízíme

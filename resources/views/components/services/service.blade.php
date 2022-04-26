@@ -1,4 +1,4 @@
-<div class="p-5 shadow-inSmaller rounded-lg transform transition duration-300 hover:scale-105 hover:shadow-xl hover:shadow-layout-gray hover:bg-layout-gray">
+<div class="p-5 shadow-inSmaller rounded-3xl transform transition duration-300 hover:scale-105 hover:shadow-xl hover:shadow-layout-gray hover:bg-layout-gray">
     <a href="#" class="">
 
         <div class="text-center">
