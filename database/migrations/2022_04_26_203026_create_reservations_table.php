@@ -24,6 +24,9 @@ return new class extends Migration
             $table->string('email');
             $table->string('car');
             $table->string('type');
+
+            $table->boolean('done')->default(0);
+
         });
     }
 
