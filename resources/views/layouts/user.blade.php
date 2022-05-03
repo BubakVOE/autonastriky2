@@ -31,11 +31,7 @@
 
     </body>
 
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <script>
-
-
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
@@ -93,86 +89,6 @@
             opacity.style.display = "none";
             }
         }
-
-
-
-        // function hamburgerToggle() {
-        //         var x = document.getElementById("hamburgerLinks");
-        //         if (x.style.display === "block") {
-        //             x.style.display = "none";
-        //         } else {
-        //             x.style.display = "block";
-        //         }
-        //     }
-
-        //     function champToggle() {
-        //         var x = document.getElementById("champLinks");
-        //         if (x.style.display === "block") {
-        //             x.style.display = "none";
-        //         } else {
-        //             x.style.display = "block";
-        //         }
-        //     }
-
-        //     function otherToggle() {
-        //         var x = document.getElementById("otherLinks");
-        //         if (x.style.display === "block") {
-        //             x.style.display = "none";
-        //         } else {
-        //             x.style.display = "block";
-        //         }
-        //     }
-
-        //     function vipToggle() {
-        //         var x = document.getElementById("vipLinks");
-        //         if (x.style.display === "block") {
-        //             x.style.display = "none";
-        //         } else {
-        //             x.style.display = "block";
-        //         }
-        //     }
-
-        //     function userToggle() {
-        //         var x = document.getElementById("userLinks");
-        //         if (x.style.display === "block") {
-        //             x.style.display = "none";
-        //         } else {
-        //             x.style.display = "block";
-        //         }
-        //     }
-
-
-        //     function mobileToggle() {
-        //         var x = document.getElementById("mobileToggles");
-        //         if (x.style.display === "block") {
-        //             x.style.display = "none";
-        //             x.style.backgroundColor = "lightblue";
-        //         } else {
-        //             x.style.display = "block";
-        //         }
-        //     }
-
-
-        //     function colorToggle() {
-        //         var x = document.getElementById("colorToggles");
-        //         if (x.style.display === "block") {
-        //             x.style.display = "none";
-        //         } else {
-        //             x.style.display = "block";
-        //         }
-        //     }
-
-
-        //     function houseToggle() {
-        //         var x = document.getElementById("houseToggles");
-        //         if (x.style.display === "block") {
-        //             x.style.display = "none";
-        //         } else {
-        //             x.style.display = "block";
-        //         }
-        //     }
-
-
-        </script>
+    </script>
 
 </html>

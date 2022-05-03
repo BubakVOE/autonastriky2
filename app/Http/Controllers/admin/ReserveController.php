@@ -14,7 +14,7 @@ class ReserveController extends Controller
 
         $test->delete();
 
-        return back()->with('message', 'Úspešně jsi smazal záznam');
+        return back()->with('delete', 'Objednávka č. '. $id .' byla smazána');
     }
 
     public function update($id)
@@ -27,7 +27,7 @@ class ReserveController extends Controller
 
             $reserve->save();
 
-            return back()->with('message', 'Objednávka č. '. $id .' byla přesunuta');
+            return back()->with('update', 'Objednávka č. '. $id .' byla přesunuta');
         };
 
     }}

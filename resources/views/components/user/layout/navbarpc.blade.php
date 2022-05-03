@@ -10,14 +10,14 @@
 
         <nav class="hidden md:flex items-center space-x-10 ">
 
-{{-- services --}}
+{{-- služby --}}
             <div class="{{ active(['sluzby', 'sluzby/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
                 <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('services') }}">
                     služby
                 </a>
             </div>
 
-{{-- 'offer/*' --}}
+{{-- 'galerie/*' --}}
             <div class="{{ active(['gallery', 'gallery/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
                 <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('gallery') }}">
                     galerie
@@ -87,21 +87,21 @@
                 <div class="flex flex-col space-y-2 ">
                     <div class="flex justify-between">
                         {{-- <a href="https://www.facebook.com/petr.sitar.9"> --}}
-                        <a class="bg-layout-white p-1 rounded-md" target="_blank" href="{{ route('dashboard-index') }}">
+                        <a class="bg-layout-lightgray p-1 rounded-md" target="_blank" href="{{ route('dashboard-index') }}">
                             <img class="w-6" src="{{ asset('src/navbar/facebook.png') }}" alt="">
                         </a>
 
-                        <a class="bg-layout-white p-1 rounded-md" target="_blank" href="https://www.instagram.com/petrsitar_vojtareality/">
+                        <a class="bg-layout-lightgray p-1 rounded-md" target="_blank" href="https://www.instagram.com/petrsitar_vojtareality/">
                             <img class="w-6" src="{{ asset('src/navbar/instagram.png') }}" alt="">
                         </a>
-                        <a class="bg-layout-white p-1 rounded-md" target="_blank" href="">
+                        <a class="bg-layout-lightgray p-1 rounded-md" target="_blank" href="">
                             <img class="w-6" src="{{ asset('src/navbar/youtube.png') }}" alt="">
                         </a>
                     </div>
 
-                    <div class="lg:flex flex-row items-center justify-center bg-layout-white p-1 rounded-md">
+                    <div class="lg:flex flex-row items-center justify-center bg-layout-lightgray p-1 rounded-md">
                         <img  class="w-3 h-3 xl:w-6 xl:h-6" src="{{ asset('src/navbar/phone.png') }}" alt="">
-                        <h1 class="text-xs xl:text-base">+730 681 670</h1>
+                        <h1 class="text-base">+730 681 670</h1>
                     </div>
                 </div>
             @endguest

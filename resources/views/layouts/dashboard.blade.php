@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     </head>
-    <body class="bg-gray-500">
+    <body class="bg-layout-gray">
 
         <div class="">
             <x-user.layout.navbarpc/>
@@ -27,4 +27,26 @@
 
 
     </body>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "0px 0px";
+            document.getElementById("navbar").style.backgroundColor = 'rgba(0, 1, 0, 0.95)';
+            document.getElementById("logo").style.fontSize = "15px";
+            document.getElementById("imgLogo").style.width = "160px";
+            document.getElementById("hamburger").style.width = "50px";
+            document.getElementById("hamburger").style.height = "50px";
+        } else {
+            document.getElementById("navbar").style.padding = "15px 0px";
+            document.getElementById("navbar").style.backgroundColor = 'rgba(23,23,23, 0.95)';
+            document.getElementById("logo").style.fontSize = "24px";
+            document.getElementById("imgLogo").style.width = "220px";
+            document.getElementById("hamburger").style.width = "64px";
+            document.getElementById("hamburger").style.height = "64px";
+            }
+        }
+</script>
 </html>
