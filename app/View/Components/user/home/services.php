@@ -6,14 +6,15 @@ use Illuminate\View\Component;
 
 class services extends Component
 {
-    /**
-     * Create a new component instance.
-     *
-     * @return void
-     */
-    public function __construct()
+    public $newCars;
+    public $completedCars;
+    public $posts;
+
+    public function __construct($newCars, $completedCars, $posts)
     {
-        //
+        $this -> newCars = $newCars;
+        $this -> completedCars = $completedCars;
+        $this -> posts = $posts;
     }
 
     /**

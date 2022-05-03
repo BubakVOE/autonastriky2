@@ -1,4 +1,4 @@
-<div class="py-12 bg-layout-gray">
+<div class="py-12 bg-layout-black">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div class="mt-10">

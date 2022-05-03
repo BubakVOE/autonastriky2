@@ -5,9 +5,13 @@
 {{-- main pages --}}
     <x-user.home.introduction/>
 
-    <x-user.home.services/>
+    <div class="bg-layout-gray">
 
-    <x-user.home.gallery/>
+        <x-user.home.services :newCars="$newCars" :completedCars="$completedCars" :posts="$posts"/>
+
+        <x-user.home.gallery/>
+
+    </div>
 
 {{-- addons --}}
     <x-user.home.leftnav/>

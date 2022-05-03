@@ -1,4 +1,4 @@
-<section id="introduction" class="h-screen relative grid grid-cols-1 place-items-end items-center"
+<section id="introduction" class="h-screen relative grid grid-cols-1 place-items-end items-center "
                 style="background-image: linear-gradient(to bottom right, rgba(255, 47, 0, 0.98), rgba(248, 149, 0, 0.397) , rgba(10, 10, 10, 0.397)); ">
 
     <div class="grid grid-cols-2 w-11/12 h-full">
@@ -19,7 +19,7 @@
 
                 <div class="grid grid-cols-2">
                     <div class="space-x-2 flex items-center justify-center">
-                        <a class="font-Rubik font-bold uppercase rounded px-4 py-2 text-2xl border-2 text-layout-white bg-layout-red bg-opacity-80 hover:bg-opacity-100 transition duration-500 ease-in-out"
+                        <a class=" z-10 font-Rubik font-bold uppercase rounded px-4 py-2 text-2xl border-2 text-layout-white bg-layout-red bg-opacity-80 hover:bg-opacity-100 transition duration-500 ease-in-out"
                             href="{{ route('services') }}">
                             Služby !
                         </a>
@@ -66,9 +66,9 @@
     </div>
 
 
-    <div class="absolute bottom-0 left-36 w-5/12">
+    {{-- <div class="absolute bottom-0 left-36 w-5/12 z-20">
         <x-user.svg.truckgarage/>
-    </div>
+    </div> --}}
 
 
 
