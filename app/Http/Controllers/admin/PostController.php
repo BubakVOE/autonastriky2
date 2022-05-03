@@ -16,7 +16,7 @@ class PostController extends Controller
 
     public function create()
     {
-        return view('dashboard.post.create');
+        return view('pages.dashboard.post.create');
     }
 
     public function store(Request $request)
@@ -67,7 +67,7 @@ class PostController extends Controller
     {
         $post = Post::find($id);
 
-        return view('dashboard.post.edit', [
+        return view('pages.dashboard.post.edit', [
             'post' => $post,
         ]);
     }

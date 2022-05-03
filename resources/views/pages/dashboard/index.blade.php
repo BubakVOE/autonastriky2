@@ -270,63 +270,66 @@
         </div>
 
         <div class="mt-10 bg-layout-red p-2 shadow-xl">
-            <div class="bg-gray-200 grid grid-cols-8 py-5 place-items-center font-bold font-poppins border-b-2 border-layout-black">
+            <div class="bg-gray-200 grid grid-cols-7 py-5 place-items-center font-bold font-poppins border-b-2 border-layout-black">
 
                 <h1>ID</h1>
 
-                <h1>Jméno</h1>
-
-                <h1>E-mail</h1>
-
-                <h1>telefonní číslo</h1>
+                <h1>cover</h1>
 
                 <h1>auto</h1>
 
+                <h1>Popis</h1>
+
                 <div class="flex flex-col items-center justify-center">
-                    <h1>datum</h1>
+                    <h1>poslední upravy</h1>
                     <h1 class="font-light text-xs">den/měsíc/rok</h1>
                 </div>
 
-                <h1>Předběžná rezervace</h1>
+                <div class="flex flex-col items-center justify-center">
+                    <h1>vytvořeno</h1>
+                    <h1 class="font-light text-xs">den/měsíc/rok</h1>
+                </div>
 
                 <div class="flex flex-col items-center justify-center">
                     <h1>Upravy</h1>
+                    <h1 class="font-light text-xs">smazat / upravit / ukázat </h1>
                 </div>
+
 
             </div>
 
-            @foreach ($completed_cars as $completed_car)
+            @foreach ($posts as $post)
 
-                <div class="grid grid-cols-8 place-items-center font-poppins text-sm py-4 border-b border-layout-black bg-gray-200">
+                <div class="p-2 grid grid-cols-7 place-items-center font-poppins text-sm py-4 border-b border-layout-black bg-gray-200">
 
-                    <h1 class="">{{ $completed_car->id }}</h1>
+                    <h1 class="font-semibold">{{ $post->id }}</h1>
 
-                    <h1>{{ $completed_car->firstName }} {{ $completed_car->lastName }}</h1>
+                    <img class="w-24" src="{{ asset('posts/thumbNail/'.$post->cover) }}" alt="">
 
-                    <h1>{{ $completed_car->email }}</h1>
+                    <h1>{{ $post->car }}_{{ $post->type }}</h1>
 
-                    <h1>{{ $completed_car->mobile }}</h1>
+                    <h1 class="w-24 overflow-auto">{{ $post->description }}</h1>
 
-                    <div>
-                        <h1>
-                            {{ $completed_car->car }} {{ $completed_car->type }}
-                        </h1>
-                    </div>
+                    <h1>{{ date('jS M Y', strtotime($post->created_at)) }}</h1>
 
-                    <h1>{{ date('jS M Y', strtotime($completed_car->created_at)) }}</h1>
+                    <h1>{{ date('jS M Y', strtotime($post->updated_at)) }}</h1>
 
-                    <h1>{{ date('jS M Y', strtotime($completed_car->date)) }}</h1>
+                    <div class="p-2 flex flex-col items-center justify-center space-y-1 w-20 mx-auto bg-layout-white">
 
-                    <div class="flex flex-row justify-evenly">
+                        <button class="bg-layout-red px-2 py-1 rounded font-Rubik text-base focus:outline-none"
+                                type="submit" >
+                            Smazat
+                        </button>
 
-                        <form action="/dashboard/reserve/delete/{{ $completed_car->id }}" method="POST">
-                            @csrf
-                            @method('DELETE')
-                            <button class="bg-layout-red px-3 py-2 rounded-md text-base hover:text-orange-200 focus:outline-none"
-                                    type="submit" >
-                                Smazat
-                            </button>
-                        </form>
+                        <a href=" "
+                           class="bg-blue-500 px-2 py-1 rounded font-Rubik text-base focus:outline-none">
+                           Upravit
+                        </a>
+
+                        <a href=" "
+                           class="bg-layout-green px-2 py-1 rounded font-Rubik text-base focus:outline-none">
+                           Ukázat
+                        </a>
 
                     </div>
                 </div>
