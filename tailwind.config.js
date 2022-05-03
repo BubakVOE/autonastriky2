@@ -17,11 +17,11 @@ module.exports = {
 
             colors: {
                 layout: {
-                  'black' : '#161616',
-                  'gray' : '#4F4F4F',
-                  'lightgray' : '#F3F0F1',
-                  'red' : '#FF2F00',
-                  'white' : '#FFFCF2',
+                  'black':'#161616',
+                  'gray':'#4F4F4F',
+                  'lightgray':'#F3F0F1',
+                  'red':'#FA3431',
+                  'white':'#FFFCF2',
                 },
                 blue: {
                   'custom' : '#112B4C',

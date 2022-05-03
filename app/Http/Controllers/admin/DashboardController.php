@@ -10,10 +10,14 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $reservations = Reservation::all();
 
-        return view('pages.dashboard.index', [
-            'reservations' => $reservations,
+        $new_cars = Reservation::where('done', 0)->count();
+
+        $completed_cars = Reservation::where('done', 1)->count();
+
+        return view('pages.dashboard.index',[
+            'new_cars' => $new_cars,
+            'completed_cars' => $completed_cars,
         ]);
     }
 }

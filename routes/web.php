@@ -45,6 +45,7 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 
 route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard-index');
 
+
 route::put('/dashboard/reserve/update/{id}', [ReserveController::class, 'update']);
 route::delete('/dashboard/reserve/delete/{id}', [ReserveController::class, 'delete'])->name('dashboard-delete');
 
