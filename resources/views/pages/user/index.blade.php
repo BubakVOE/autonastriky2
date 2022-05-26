@@ -2,7 +2,6 @@
 
 @section('content')
 
-{{-- main pages --}}
     <x-user.home.introduction/>
 
     <div class="bg-layout-gray">

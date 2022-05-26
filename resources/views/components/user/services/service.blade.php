@@ -1,8 +1,8 @@
-<div class="p-5 border-2 border-layout-white bg-layout-red  rounded-3xl transform transition duration-300 hover:scale-105">
+<div class="p-5 shadow-inner border border-transparent bg-layout-gray rounded-3xl transform transition duration-300 hover:scale-105 hover:border-white hover:shadow-xl hover:bg-layout-red">
     <a href="#" class="">
 
         <div class="text-center text-layout-white">
-            <h3 class="text-lg tracking-tight font-extrabold">
+            <h3 class="text-lg tracking-tight font-extrabold font-Rubik">
                 {{ $text }}
             </h3>
         </div>

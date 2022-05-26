@@ -19,7 +19,7 @@
 
                 <div class="grid grid-cols-2">
                     <div class="space-x-2 flex items-center justify-center">
-                        <a class=" z-10 font-Rubik font-bold uppercase rounded px-4 py-2 text-2xl border-2 text-layout-white bg-layout-red bg-opacity-80 hover:bg-opacity-100 transition duration-500 ease-in-out"
+                        <a class="font-Rubik font-bold uppercase rounded px-4 py-2 text-2xl border-2 text-layout-white bg-layout-red bg-opacity-80 hover:bg-opacity-100 transition duration-500 ease-in-out"
                             href="{{ route('services') }}">
                             Služby !
                         </a>

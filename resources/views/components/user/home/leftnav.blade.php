@@ -1,5 +1,5 @@
 <div class="fixed top-1/2 transform -translate-y-1/2 left-0 p-2 flex flex-col items-end justify-center">
-    <div class="space-y-5 backdrop-filter backdrop-blur bg-layout-gray bg-opacity-30 py-3 px-10 rounded-lg border-2 border-black ">
+    <div class="space-y-5 backdrop-filter backdrop-blur bg-layout-red bg-opacity-30 py-3 px-10 rounded-lg border-2 border-black ">
 
         <li onclick='introduction()'
             class="flex items-center hover:bg-opacity-40 hover:bg-layout-black group rounded-md p-1 cursor-pointer">

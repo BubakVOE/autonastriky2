@@ -9,6 +9,25 @@ module.exports = {
 
     theme: {
         extend: {
+            animation: {
+                backdrop: 'backdrop 20s infinite',
+            },
+
+            keyframes: {
+                backdrop: {
+                    '0%': {
+                        backgroundColor: '#4F4F4F',
+                    },
+                    '50%': {
+                        backgroundColor: '#626262',
+                    },
+                    '100%': {
+                        backgroundColor: '#4F4F4F',
+                    },
+
+                },
+            },
+
             fontFamily: {
                 Poppins: 'Poppins, sans-serif',
                 Roboto: 'Roboto, sans-serif',
@@ -19,7 +38,7 @@ module.exports = {
                 layout: {
                   'black':'#161616',
                   'gray':'#4F4F4F',
-                  'lightgray':'#F3F0F1',
+                  'lightgray':'#626262',
                   'red':'#FA3431',
                   'white':'#FFFCF2',
 
