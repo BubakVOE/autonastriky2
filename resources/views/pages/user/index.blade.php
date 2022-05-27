@@ -4,7 +4,7 @@
 
     <x-user.home.introduction/>
 
-    <div class="bg-layout-gray">
+    <div class="bg-layout-gray ">
 
         <x-user.home.services :newCars="$newCars" :completedCars="$completedCars" :posts="$posts"/>
 

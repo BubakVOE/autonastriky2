@@ -101,6 +101,7 @@
         </div>
 
         <div>
+            <x-user.svg.cargarage/>
 
         </div>
     </div>
