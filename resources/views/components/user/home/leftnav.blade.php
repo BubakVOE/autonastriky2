@@ -1,4 +1,4 @@
-<div class="fixed top-1/2 transform -translate-y-1/2 left-0 p-2 flex flex-col items-end justify-center">
+<div class="hidden xl:flex flex-col items-end justify-center fixed top-1/2 transform -translate-y-1/2 left-0 p-2 ">
     <div class="space-y-5 backdrop-filter backdrop-blur bg-layout-red bg-opacity-30 py-3 px-10 rounded-lg border-2 border-black ">
 
         <li onclick='introduction()'

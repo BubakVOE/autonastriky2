@@ -16,13 +16,21 @@
     </head>
     <body>
 
-        <div class="">
+        <div class="hidden xl:block">
             <x-user.layout.navbarpc/>
         </div>
+
+        <div class="block xl:hidden">
+            <x-user.layout.navbarmobile/>
+        </div>
+
+
 
         <div class="overflow-hidden">
             @yield('content')
         </div>
+
+
 
         <div class="">
             <x-user.layout.footer/>
@@ -52,24 +60,24 @@
           }
         }
 
-    // smooth move
-        function introduction() {
-        document.getElementById("introduction").scrollIntoView();
-        }
+            // smooth move
+                function introduction() {
+                document.getElementById("introduction").scrollIntoView();
+                }
 
-        function services() {
-        document.getElementById("services").scrollIntoView();
-        }
+                function services() {
+                document.getElementById("services").scrollIntoView();
+                }
 
-        function gallery() {
-        document.getElementById("gallery").scrollIntoView();
-        }
+                function gallery() {
+                document.getElementById("gallery").scrollIntoView();
+                }
 
-        function contacts() {
-        document.getElementById("contacts").scrollIntoView();
-        }
+                function contacts() {
+                document.getElementById("contacts").scrollIntoView();
+                }
 
-    // Get the modal
+            // Get the modal
         var opacity = document.getElementById("Opacity");
 
         var btn = document.getElementById("modalBtn");

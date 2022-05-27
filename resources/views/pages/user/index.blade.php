@@ -10,6 +10,8 @@
 
         <x-user.home.gallery/>
 
+        <x-user.home.contacts/>
+
     </div>
 
 {{-- addons --}}

@@ -4,7 +4,7 @@ namespace App\View\Components\user\svg;
 
 use Illuminate\View\Component;
 
-class boxes extends Component
+class mobile extends Component
 {
     /**
      * Create a new component instance.
@@ -23,6 +23,6 @@ class boxes extends Component
      */
     public function render()
     {
-        return view('components.user.svg.boxes');
+        return view('components.user.svg.mobile');
     }
 }
