@@ -14,16 +14,27 @@
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
     </head>
-    <body class="bg-layout-gray">
+    <body>
 
-        <div class="">
+        <div class="hidden xl:block">
             <x-user.layout.navbarpc/>
         </div>
 
-        <div class="overflow-hidden ">
+        <div class="block xl:hidden">
+            <x-user.layout.navbarmobile/>
+        </div>
+
+
+
+        <div class="overflow-hidden">
             @yield('content')
         </div>
 
+
+
+        <div class="">
+            <x-user.layout.footer/>
+        </div>
 
 
     </body>
@@ -32,21 +43,69 @@
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("navbar").style.padding = "0px 0px";
-            document.getElementById("navbar").style.backgroundColor = 'rgba(0, 1, 0, 0.95)';
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navbar").style.padding = "5px 0px";
+            document.getElementById("navbar").style.backgroundColor = 'rgba(0, 0, 0, 0.95)';
             document.getElementById("logo").style.fontSize = "15px";
             document.getElementById("imgLogo").style.width = "160px";
             document.getElementById("hamburger").style.width = "50px";
             document.getElementById("hamburger").style.height = "50px";
-        } else {
-            document.getElementById("navbar").style.padding = "15px 0px";
+          } else {
+            document.getElementById("navbar").style.padding = "24px 0px";
             document.getElementById("navbar").style.backgroundColor = 'rgba(23,23,23, 0.95)';
-            document.getElementById("logo").style.fontSize = "24px";
-            document.getElementById("imgLogo").style.width = "220px";
+            document.getElementById("logo").style.fontSize = "16px";
+            document.getElementById("imgLogo").style.width = "200px";
             document.getElementById("hamburger").style.width = "64px";
             document.getElementById("hamburger").style.height = "64px";
+          }
+        }
+
+        function hamburgerToggle() {
+            var x = document.getElementById("hamburgerLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
             }
         }
-</script>
+
+            // smooth move
+                function introduction() {
+                document.getElementById("introduction").scrollIntoView();
+                }
+
+                function services() {
+                document.getElementById("services").scrollIntoView();
+                }
+
+                function gallery() {
+                document.getElementById("gallery").scrollIntoView();
+                }
+
+                function contacts() {
+                document.getElementById("contacts").scrollIntoView();
+                }
+
+            // Get the modal
+        var opacity = document.getElementById("Opacity");
+
+        var btn = document.getElementById("modalBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            opacity.style.display = "flex";
+        }
+
+        span.onclick = function() {
+            opacity.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == opacity) {
+            opacity.style.display = "none";
+            }
+        }
+    </script>
+
 </html>
