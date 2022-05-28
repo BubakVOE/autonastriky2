@@ -1,62 +1,17 @@
-
-        <!-- Session Status -->
-{{--
-        <form method="POST" action="{{ route('login') }}">
-            @csrf
-
-            <!-- Email Address -->
-            <div>
-                <input type='text' name="email" value="email" required autofocus>
-
-            </div>
-
-            <!-- Password -->
-            <div class="mt-4">
-
-                <input type="password" id="password" name="password" required autocomplete="current-password">
-
-            </div>
-
-            <!-- Remember Me -->
-            <div class="block mt-4">
-                <label for="remember_me" class="inline-flex items-center">
-                    <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" name="remember">
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
-                @endif
-
-                <button type="submit">Log in</button>
-
-            </div>
-        </form> --}}
 @extends('layouts.dashboard')
 
 @section('content')
 
-    <div class="">
-        <div class="flex items-center justify-center md:py-12 px-4 sm:px-6 lg:px-8">
+    <div class="bg-layout-gray">
+        <div class="flex items-center justify-center md:pt-48 md:py-24 px-4 sm:px-6 lg:px-8">
 
-            <div class=" w-full md:w-4/12 space-y-8 bg-gradient-to-br from-own-orange to-gradient-red rounded-lg px-4 py-24 md:px-16 md:py-16">
+            <div class=" w-full md:w-4/12 space-y-8 bg-layout-lightgray shadow-xl rounded-lg px-4 py-24 md:px-16 md:py-16">
                 <div class="w-full pb-20">
-                    <img class="mx-auto h-12 w-auto" src="{{ asset('img/navbar/riot-fist.png') }}" alt="Workflow">
 
-                    <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                    <h2 class="mt-6 text-center text-3xl font-extrabold text-white font-Rubik">
                         Přihlaš se do svého účtu
                     </h2>
 
-                    <p class="mt-2 text-center text-sm text-black-lighter font-normal">
-                        nebo
-                        <a href="{{ route('register') }}" class="text-own-black underline font-bold">
-                        se zdarma zaregistruj !
-                        </a>
-                    </p>
                 </div>
 
                 <form class="mt-8 space-y-6 m-auto w-full " method="POST" action="{{ route('login') }}">
@@ -100,7 +55,9 @@
                         </div>
 
                         <div class="text-sm mt-5 md:mt-0">
-                            <a href="{{ route('password.request') }}" class="font-medium text-own-black hover:text-black-custom">
+                            <a
+                                href="{{ route('password.request') }}"
+                                class="font-medium text-own-black hover:text-black-custom">
                                 Zapomněl jsi heslo ?
                             </a>
                         </div>
@@ -108,7 +65,7 @@
                     </div>
 
                     <div class="pt-20">
-                        <button type="submit" class="transition delay-100 duration-300 ease-in-out group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-black-lighter hover:bg-black-custom focus:outline-none">
+                        <button type="submit" class="transition delay-100 duration-300 ease-in-out group relative w-full flex justify-center py-3 px-4 border border-white text-sm font-medium rounded-md text-white bg-layout-gray hover:bg-layout-lightgray focus:outline-none">
                             <span class="absolute left-0 inset-y-0 flex items-center pl-3 ">
                                 <!-- Heroicon name: solid/lock-closed -->
                                 <svg class="h-5 w-5 text-own-orange group-hover:text-own-red group-hover:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -117,7 +74,7 @@
 
                                 <svg class="h-5 w-5 text-own-orange group-hover:text-own-red hidden group-hover:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                     <path d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2H7V7a3 3 0 015.905-.75 1 1 0 001.937-.5A5.002 5.002 0 0010 2z" />
-                                    </svg>
+                                </svg>
 
                             </span>
                             Přihlásit se

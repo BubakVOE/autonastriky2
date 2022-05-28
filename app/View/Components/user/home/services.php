@@ -8,13 +8,11 @@ class services extends Component
 {
     public $newCars;
     public $completedCars;
-    public $posts;
 
-    public function __construct($newCars, $completedCars, $posts)
+    public function __construct($newCars, $completedCars)
     {
         $this -> newCars = $newCars;
         $this -> completedCars = $completedCars;
-        $this -> posts = $posts;
     }
 
     /**

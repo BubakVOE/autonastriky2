@@ -6,9 +6,9 @@
 
     <div class="bg-layout-gray ">
 
-        <x-user.home.services :newCars="$newCars" :completedCars="$completedCars" :posts="$posts"/>
+        <x-user.home.services :newCars="$newCars" :completedCars="$completedCars" />
 
-        <x-user.home.gallery/>
+        <x-user.home.gallery :posts="$posts"/>
 
         <x-user.home.contacts/>
 

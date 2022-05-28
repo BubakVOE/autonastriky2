@@ -7,7 +7,7 @@ use App\Models\Reservation;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class PagesController extends Controller
+class HomeController extends Controller
 {
     public function home()
     {
@@ -22,25 +22,5 @@ class PagesController extends Controller
             'completedCars' => $completedCars,
             'posts' => $posts,
         ]);
-    }
-
-    public function services()
-    {
-        return view('pages.user.services.index');
-    }
-
-    public function gallery()
-    {
-        return view('pages.user.gallery.index');
-    }
-
-    public function contacts()
-    {
-        return view('pages.user.contacts.index');
-    }
-
-    public function aboutCompany()
-    {
-        return view('pages.user.aboutMe.index');
     }
 }

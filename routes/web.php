@@ -9,10 +9,11 @@ use App\Http\Controllers\admin\PostController;
 use App\Http\Controllers\admin\ReserveController;
 
 // user
-use App\Http\Controllers\user\PagesController;
+use App\Http\Controllers\user\ContactsController;
+use App\Http\Controllers\user\GalleryController;
+use App\Http\Controllers\user\HomeController;
 use App\Http\Controllers\user\ReservatorController;
-use App\Http\Controllers\user\PosterController;
-
+use App\Http\Controllers\user\ServicesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -63,10 +64,13 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 
 
 // public
-route::get('/', [PagesController::class, 'home'])->name('home-index');
-route::get('/sluzby', [PagesController::class, 'services'])->name('services-index');
-route::get('/galerie', [PagesController::class, 'gallery'])->name('gallery-index');
-route::get('/kontakty', [PagesController::class, 'contacts'])->name('contacts-index');
-route::get('/o-mne', [PagesController::class, 'aboutCompany'])->name('aboutCompany-index');
+route::get('/', [HomeController::class, 'home'])->name('home-index');
+route::get('/sluzby', [ServicesController::class, 'services'])->name('services-index');
+route::get('/galerie', [GalleryController::class, 'gallery'])->name('gallery-index');
+route::get('/kontakty', [ContactsController::class, 'contacts'])->name('contacts-index');
+
+
+
+route::get('/galerie/{id}', [GalleryController::class, 'show'])->name('gallery-show');
 
 route::post('rezervace/store', [ReservatorController::class, 'store'])->name('rezervace-store');

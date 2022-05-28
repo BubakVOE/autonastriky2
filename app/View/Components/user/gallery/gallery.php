@@ -1,20 +1,21 @@
 <?php
 
-namespace App\View\Components\user\home;
+namespace App\View\Components\user\gallery;
 
 use Illuminate\View\Component;
 
 class gallery extends Component
 {
-    public $posts;
+    public $post;
+
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct($posts)
+    public function __construct($post)
     {
-        $this -> posts = $posts;
+        $this -> post = $post;
     }
 
     /**
@@ -24,6 +25,6 @@ class gallery extends Component
      */
     public function render()
     {
-        return view('components.user.home.gallery');
+        return view('components.user.gallery.gallery');
     }
 }

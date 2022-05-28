@@ -12,10 +12,10 @@
 
             <div class="flex items-center justify-center space-x-8">
 
-                <div class="{{ active(['sluzby', 'sluzby/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                <div class="{{ active(['/']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
                     <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white"
-                        href="{{ route('services-index') }}">
-                        služby
+                        href="{{ route('home-index') }}">
+                        domů
                     </a>
                 </div>
 
@@ -40,6 +40,13 @@
 
                 </div>
 
+                <div class="{{ active(['sluzby', 'sluzby/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                    <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white"
+                        href="{{ route('services-index') }}">
+                        služby
+                    </a>
+                </div>
+
                 <div class="{{ active(['kontakty', 'kontakty/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
                     <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white"
                         href="{{ route('contacts-index') }}">
@@ -47,12 +54,7 @@
                     </a>
                 </div>
 
-                <div class="{{ active(['o-spolecnosti', 'o-spolecnost/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                    <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white"
-                        href="{{ route('aboutCompany-index') }}">
-                        o mně
-                    </a>
-                </div>
+
             </div>
 
             <div class="flex items-center justify-center ">
@@ -94,9 +96,10 @@
 
                 <div class="flex items-center justify-center space-x-8">
 
-                    <div class="{{ active(['sluzby', 'sluzby/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('services-index') }}">
-                            služby
+                    <div class="{{ active(['/']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white"
+                            href="{{ route('home-index') }}">
+                            domů
                         </a>
                     </div>
 
@@ -106,15 +109,14 @@
                         </a>
                     </div>
 
-                        <div class="relative">
-                            <a
-                            href="{{ route('dashboard-index') }}"
-                            class="transition duration-500 ease-in-out hover:bg-layout-white hover:text-layout-gray uppercase bg-layout-gray rounded text-layout-white font-bold font-Rubik p-1 xl:text-xl xl:px-3 xl:py-2"
-                            aria-expanded="false">
-                                <span>Dashboard</span>
-                            </a>
-                        </div>
-
+                    <div class="relative">
+                        <a
+                        href="{{ route('dashboard-index') }}"
+                        class="transition duration-500 ease-in-out hover:bg-layout-white hover:text-layout-gray uppercase bg-layout-gray rounded text-layout-white font-bold font-Rubik p-1 xl:text-xl xl:px-3 xl:py-2"
+                        aria-expanded="false">
+                            <span>Dashboard</span>
+                        </a>
+                    </div>
 
                     <div class="{{ active(['kontakty', 'kontakty/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
                         <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('contacts-index') }}">
@@ -122,11 +124,12 @@
                         </a>
                     </div>
 
-                    <div class="{{ active(['o-spolecnosti', 'o-spolecnost/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('aboutCompany-index') }}">
-                            o firmě
+                    <div class="{{ active(['sluzby', 'sluzby/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('services-index') }}">
+                            služby
                         </a>
                     </div>
+
                 </div>
 
                 <div class="flex items-center justify-center ">
@@ -157,7 +160,9 @@
 
                 <div class="flex justify-start">
                     <div class="flex items-center justify-center w-8/12 mx-auto py-4">
-                        <a class="bg-layout-white p-1 rounded-md" href="{{ route('home-index') }}">
+                        <a
+                            class="bg-layout-white p-1 rounded-md"
+                            href="{{ route('home-index') }}">
                             LOGO
                         </a>
                     </div>
@@ -165,9 +170,11 @@
 
                 <div class="flex items-center justify-center space-x-8">
 
-                    <div class="{{ active(['sluzby', 'sluzby/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('services-index') }}">
-                            služby
+                    <div class="{{ active(['/']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                        <a
+                            class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white"
+                            href="{{ route('services-index') }}">
+                            Domů
                         </a>
                     </div>
 
@@ -192,11 +199,12 @@
                         </a>
                     </div>
 
-                    <div class="{{ active(['o-spolecnosti', 'o-spolecnost/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('aboutCompany-index') }}">
-                            o firmě
+                    <div class="{{ active(['sluzby', 'sluzby/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('services-index') }}">
+                            služby
                         </a>
                     </div>
+
                 </div>
 
                 <div class="flex items-center justify-center ">

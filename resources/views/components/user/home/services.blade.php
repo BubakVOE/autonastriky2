@@ -54,9 +54,6 @@
         </div>
     </div>
 
-{{-- <div class="absolute">
-    <img class="w-4/12 " src="{{ asset('src/bg/Iphone-bg_column.png') }}" >
-</div> --}}
     <div class="w-11/12 xl:w-9/12 mx-auto shadow-xl bg-layout-lightgray py-10 rounded-2xl xl:mt-20 ">
         <div class="text-center ">
             <h1 class="text-lg tracking-tight font-extrabold sm:text-1xl md:text-4xl uppercase font-Rubik text-layout-red ">
