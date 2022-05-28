@@ -64,9 +64,9 @@ Route::group(['middleware' => ['auth', 'admin']], function () {
 
 // public
 route::get('/', [PagesController::class, 'home'])->name('home-index');
-route::get('/sluzby', [PagesController::class, 'services'])->name('services');
-route::get('/galerie', [PagesController::class, 'gallery'])->name('gallery');
-route::get('/kontakty', [PagesController::class, 'contacts'])->name('contacts');
-route::get('/o-mne', [PagesController::class, 'aboutMe'])->name('aboutMe');
+route::get('/sluzby', [PagesController::class, 'services'])->name('services-index');
+route::get('/galerie', [PagesController::class, 'gallery'])->name('gallery-index');
+route::get('/kontakty', [PagesController::class, 'contacts'])->name('contacts-index');
+route::get('/o-mne', [PagesController::class, 'aboutCompany'])->name('aboutCompany-index');
 
 route::post('rezervace/store', [ReservatorController::class, 'store'])->name('rezervace-store');

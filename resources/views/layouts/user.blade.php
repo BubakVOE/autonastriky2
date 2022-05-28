@@ -26,7 +26,7 @@
 
 
 
-        <div class="overflow-hidden">
+        <div class="overflow-hidden ">
             @yield('content')
         </div>
 

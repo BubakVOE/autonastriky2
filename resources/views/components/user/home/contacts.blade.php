@@ -1,6 +1,6 @@
-<section id="contacts" class="pb-24 pt-16 relative  ">
+<section id="contacts" class="pb-24 xl:pt-16 relative  ">
 
-    <div class="w-9/12 mx-auto shadow-xl bg-layout-lightgray py-10 rounded-2xl mt-20 ">
+    <div class="w-11/12 xl:w-9/12 mx-auto shadow-xl bg-layout-lightgray py-10 rounded-2xl xl:mt-20 ">
         <div class="text-center ">
             <h1 class="text-lg tracking-tight font-extrabold sm:text-1xl md:text-4xl uppercase font-Rubik text-layout-red ">
                 Kontakty
@@ -22,7 +22,7 @@
         </div>
 
         <div class="text-center">
-            <a href="{{ route('services') }}"
+            <a href="{{ route('services-index') }}"
                 class="font-Rubik font-bold uppercase rounded px-4 py-2 text-2xl border text-white border-white bg-layout-red bg-opacity-80 hover:bg-opacity-100 transition duration-500 ease-in-out">
                 Rezervovat
             </a>

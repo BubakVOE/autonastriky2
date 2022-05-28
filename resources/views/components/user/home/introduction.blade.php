@@ -17,19 +17,19 @@
                 <div>
                     <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-7xl uppercase font-poppins text-transparent bg-clip-text bg-gradient-to-l from-layout-red to-layout-gray">
                         <span class="block md:inline">Nástřiky</span>
-                        <span class="block md:inline  ">podvozku</span>
+                        <span class="block md:inline ">podvozku</span>
                     </h1>
                 </div>
 
                 <div class="grid grid-cols-2">
                     <div class="space-x-2 flex items-center justify-center">
                         <a class="font-Rubik font-bold uppercase rounded px-4 py-2 text-2xl border-2 text-layout-white bg-layout-red bg-opacity-80 hover:bg-opacity-100 transition duration-500 ease-in-out"
-                            href="{{ route('services') }}">
+                            href="{{ route('services-index') }}">
                             Služby !
                         </a>
 
                         <a class="font-Rubik font-bold uppercase rounded px-4 py-2 text-2xl border-2 text-layout-red border-layout-red hover:bg-layout-white transition duration-500 ease-in-out"
-                            href="{{ route('gallery') }}">
+                            href="{{ route('gallery-index') }}">
                             galerie
                         </a>
                     </div>
@@ -82,12 +82,12 @@
         <div class="grid grid-cols-1 space-y-5">
             <div class="space-x-2 flex items-center justify-center">
                 <a class="font-Rubik font-bold uppercase rounded px-4 py-2 text-2xl border-2 text-layout-white bg-layout-red bg-opacity-80 hover:bg-opacity-100 transition duration-500 ease-in-out"
-                    href="{{ route('services') }}">
+                    href="{{ route('services-index') }}">
                     Služby !
                 </a>
 
                 <a class="font-Rubik font-bold uppercase rounded px-4 py-2 text-2xl border-2 text-layout-red border-layout-red hover:bg-layout-white transition duration-500 ease-in-out"
-                    href="{{ route('gallery') }}">
+                    href="{{ route('gallery-index') }}">
                     galerie
                 </a>
             </div>

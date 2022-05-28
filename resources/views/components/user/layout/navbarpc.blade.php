@@ -13,19 +13,26 @@
             <div class="flex items-center justify-center space-x-8">
 
                 <div class="{{ active(['sluzby', 'sluzby/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                    <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('services') }}">
+                    <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white"
+                        href="{{ route('services-index') }}">
                         služby
                     </a>
                 </div>
 
-                <div class="{{ active(['gallery', 'gallery/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                    <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('gallery') }}">
+                <div class="{{ active(['galerie', 'galerie/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                    <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white"
+                        href="{{ route('gallery-index') }}">
                         galerie
                     </a>
                 </div>
 
                 <div class="relative ">
-                    <button id="modalBtn" type="button" class="transition duration-500 ease-in-out hover:bg-layout-white hover:text-layout-gray uppercase bg-layout-gray rounded text-layout-white font-bold font-Rubik p-1 xl:text-xl xl:px-3 xl:py-2" aria-expanded="false">
+                    <button
+                        id="modalBtn"
+                        type="button"
+                        class="transition duration-500 ease-in-out hover:bg-layout-white hover:text-layout-gray uppercase bg-layout-gray rounded text-layout-white font-bold font-Rubik p-1 xl:text-xl xl:px-3 xl:py-2"
+                        aria-expanded="false"
+                    >
                         <span>Rezervovat</span>
                     </button>
 
@@ -33,14 +40,16 @@
 
                 </div>
 
-                <div class="{{ active(['contacts', 'contacts/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                    <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('contacts') }}">
+                <div class="{{ active(['kontakty', 'kontakty/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                    <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white"
+                        href="{{ route('contacts-index') }}">
                         kontakty
                     </a>
                 </div>
 
-                <div class="{{ active(['aboutMe', 'aboutMe/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                    <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('aboutMe') }}">
+                <div class="{{ active(['o-spolecnosti', 'o-spolecnost/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                    <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white"
+                        href="{{ route('aboutCompany-index') }}">
                         o mně
                     </a>
                 </div>
@@ -86,13 +95,13 @@
                 <div class="flex items-center justify-center space-x-8">
 
                     <div class="{{ active(['sluzby', 'sluzby/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('services') }}">
+                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('services-index') }}">
                             služby
                         </a>
                     </div>
 
-                    <div class="{{ active(['gallery', 'gallery/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('gallery') }}">
+                    <div class="{{ active(['galerie', 'galerie/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('gallery-index') }}">
                             galerie
                         </a>
                     </div>
@@ -107,15 +116,15 @@
                         </div>
 
 
-                    <div class="{{ active(['contacts', 'contacts/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('contacts') }}">
+                    <div class="{{ active(['kontakty', 'kontakty/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('contacts-index') }}">
                             kontakty
                         </a>
                     </div>
 
-                    <div class="{{ active(['aboutMe', 'aboutMe/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('aboutMe') }}">
-                            o mně
+                    <div class="{{ active(['o-spolecnosti', 'o-spolecnost/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('aboutCompany-index') }}">
+                            o firmě
                         </a>
                     </div>
                 </div>
@@ -157,13 +166,13 @@
                 <div class="flex items-center justify-center space-x-8">
 
                     <div class="{{ active(['sluzby', 'sluzby/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('services') }}">
+                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('services-index') }}">
                             služby
                         </a>
                     </div>
 
-                    <div class="{{ active(['gallery', 'gallery/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('gallery') }}">
+                    <div class="{{ active(['galerie', 'galerie/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('gallery-index') }}">
                             galerie
                         </a>
                     </div>
@@ -177,15 +186,15 @@
 
                     </div>
 
-                    <div class="{{ active(['contacts', 'contacts/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('contacts') }}">
+                    <div class="{{ active(['kontakty', 'kontakty/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('contacts-index') }}">
                             kontakty
                         </a>
                     </div>
 
-                    <div class="{{ active(['aboutMe', 'aboutMe/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
-                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('aboutMe') }}">
-                            o mně
+                    <div class="{{ active(['o-spolecnosti', 'o-spolecnost/*']) }} relative border-b border-layout-white hover:border-b hover:border-layout-red transition duration-500 ease-in-out ">
+                        <a class="xl:uppercase font-bold xl:text-xl font-Rubik text-layout-white" href="{{ route('aboutCompany-index') }}">
+                            o firmě
                         </a>
                     </div>
                 </div>

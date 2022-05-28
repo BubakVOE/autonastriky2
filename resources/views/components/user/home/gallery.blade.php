@@ -1,6 +1,6 @@
-<section id="gallery" class="py-24">
+<section id="gallery" class="xl:py-24 pb-24 xl:pb-0">
 
-    <div class="w-9/12 mx-auto shadow-xl bg-layout-lightgray py-10 rounded-2xl mt-20 ">
+    <div class="w-11/12 xl:w-9/12 mx-auto shadow-xl bg-layout-lightgray py-10 rounded-2xl xl:mt-20 ">
 
         <div class="text-center ">
             <h1 class="text-lg tracking-tight font-extrabold sm:text-1xl md:text-4xl uppercase font-Rubik text-layout-red ">
@@ -161,7 +161,7 @@
 
         <div class="text-center">
             <a
-                href="{{ route('gallery') }}"
+                href="{{ route('gallery-index') }}"
                 class="font-Rubik font-bold uppercase rounded px-4 py-2 text-2xl border text-white border-white bg-layout-red bg-opacity-80 hover:bg-opacity-100 transition duration-500 ease-in-out">
                 Vice fotografií
             </a>

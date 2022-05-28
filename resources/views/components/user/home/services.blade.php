@@ -1,11 +1,11 @@
 <section id="services" class="pb-24 relative ">
 
-    <div class="grid grid-cols-3 place-items-center py-10  ">
-        <div class="xl:w-96 xl:h-96">
+    <div class="grid grid-cols-1 lg:grid-cols-3 place-items-center py-10  ">
+        <div class="hidden lg:block xl:w-96 xl:h-96">
             <x-user.svg.leftbox/>
         </div>
 
-        <div class="grid grid-cols-1 gap-y-5 xl:gap-y-0 xl:grid-cols-3 place-items-center gap-x-16 p-3 ">
+        <div class="grid grid-cols-1 gap-y-5 xl:gap-y-0 md:grid-cols-3 place-items-center gap-x-16 p-3 ">
             <div class="border border-white flex flex-col items-center justify-center p-5 space-y-2 w-48 max-w-2xl bg-layout-red rounded-lg hover:scale-105 transition duration-500 ease-in-out shadow-xl cursor-default ">
                 <svg class="flex-shrink-0 h-10 w-10 text-layout-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
@@ -49,17 +49,15 @@
             </div>
         </div>
 
-        <div class="xl:w-96 xl:h-96">
+        <div class="hidden lg:block xl:w-96 xl:h-96">
             <x-user.svg.rightbox/>
         </div>
     </div>
 
-
 {{-- <div class="absolute">
     <img class="w-4/12 " src="{{ asset('src/bg/Iphone-bg_column.png') }}" >
 </div> --}}
-
-    <div class="w-9/12 mx-auto shadow-xl bg-layout-lightgray py-10 rounded-2xl mt-20 ">
+    <div class="w-11/12 xl:w-9/12 mx-auto shadow-xl bg-layout-lightgray py-10 rounded-2xl xl:mt-20 ">
         <div class="text-center ">
             <h1 class="text-lg tracking-tight font-extrabold sm:text-1xl md:text-4xl uppercase font-Rubik text-layout-red ">
                 Služby, které nabízíme
@@ -74,7 +72,7 @@
         </div>
 
         <div class="text-center">
-            <a href="{{ route('services') }}"
+            <a href="{{ route('services-index') }}"
                 class="font-Rubik font-bold uppercase rounded px-4 py-2 text-2xl border text-white border-white bg-layout-red bg-opacity-80 hover:bg-opacity-100 transition duration-500 ease-in-out">
                 Zobrazit služby
             </a>

@@ -39,7 +39,7 @@ class PagesController extends Controller
         return view('pages.user.contacts.index');
     }
 
-    public function aboutMe()
+    public function aboutCompany()
     {
         return view('pages.user.aboutMe.index');
     }
