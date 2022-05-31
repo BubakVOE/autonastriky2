@@ -70,7 +70,7 @@
     </div>
 
 {{--   ....<1280px  || mobile/tablet --}}
-    <div class="grid grid-cols-1 m-5 xl:hidden space-y-5">
+    <div class="grid grid-cols-1 m-5 xl:hidden space-y-5 w-10/12 mx-auto">
 
         <div class="">
             <h1 class="text-center text-6xl tracking-tight font-extrabold uppercase font-poppins text-transparent bg-clip-text bg-gradient-to-l from-layout-red to-layout-gray">

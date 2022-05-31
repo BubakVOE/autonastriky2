@@ -6,13 +6,11 @@ use Illuminate\View\Component;
 
 class services extends Component
 {
-    public $newCars;
-    public $completedCars;
 
-    public function __construct($newCars, $completedCars)
+
+    public function __construct()
     {
-        $this -> newCars = $newCars;
-        $this -> completedCars = $completedCars;
+
     }
 
     /**

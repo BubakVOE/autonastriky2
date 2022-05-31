@@ -41,7 +41,7 @@
 
                     <dd class="ml-16 text-base text-gray-400">
                         <a href="">
-                            Ochrana osobních údajů
+                            Ochrana osobních údajů (GDPR)
                         </a>
                     </dd>
 
@@ -62,27 +62,27 @@
                         <p class="ml-16 text-lg leading-6 font-medium uppercase text-white">Užitečné odkazy</p>
                     </dt>
 
-                    <dd class="mt-2 ml-16 text-base text-gray-500">
+                    <dd class="mt-2 ml-16 text-base text-gray-500 capitalize">
                         <a href="{{ route('home-index') }}" target="_blank">
                             Domů
                         </a>
                     </dd>
 
-                    <dd class="mt-2 ml-16 text-base text-gray-500">
+                    <dd class="mt-2 ml-16 text-base text-gray-500 capitalize">
                         <a href="{{ route('gallery-index') }}" target="_blank">
-                            instagram
+                            nejnovější příspěvky
                         </a>
                     </dd>
 
-                    <dd class="mt-2 ml-16 text-base text-gray-500">
-                        <a href="{{ route('home-index') }}" target="_blank">
-                            instagram
+                    <dd class="mt-2 ml-16 text-base text-gray-500 capitalize">
+                        <a href="{{ route('services-index') }}" target="_blank">
+                            poskytované služby
                         </a>
                     </dd>
 
-                    <dd class="mt-2 ml-16 text-base text-gray-500">
-                        <a href="https://www.instagram.com/nastrik_podvozku/" target="_blank">
-                            instagram
+                    <dd class="mt-2 ml-16 text-base text-gray-500 capitalize">
+                        <a href="{{ route('contacts-index') }}" target="_blank">
+                            lokace firmy
                         </a>
                     </dd>
 

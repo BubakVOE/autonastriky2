@@ -1,10 +1,10 @@
 <div class="bg-layout-gray ronded-md shadow-inner rounded-lg grid grid-cols-1 place-items-center pb-8 space-y-5  ">
-    <div class="">
+    <div class="pt-2">
         <h1>{{ $post->car }} {{ $post->type }}</h1>
     </div>
 
     <div>
-        <img src="{{ asset('posts/thumbNail/'.$post->cover) }}" style="width: 250px" class="object-center object-cover">
+        <img src="{{ asset('posts/thumbNail/'.$post->cover) }}" style="width: 250px; height: 200px" class="object-center object-cover">
     </div>
 
     <div class="text-center">

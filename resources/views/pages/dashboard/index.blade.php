@@ -16,8 +16,8 @@
         </div>
     @endif
 
-<div class="bg-layout-gray">
-    <div class="max-w-7xl mx-auto py-40 space-y-16  ">
+    <div class="bg-layout-gray">
+        <div class="max-w-7xl mx-auto py-40 space-y-16  ">
         {{-- celkový přehled --}}
             <div>
                 <div class="font-bold text-4xl font-Rubik text-left">
@@ -83,7 +83,7 @@
 
                             <div class="text-center space-y-2">
                                 <h2 class="font-semibold text-white">Galerie - příspěvky</h2>
-                                <h1 class="font-bold font-Rubik text-black">50</h1>
+                                <h1 class="font-bold font-Rubik text-black">{{ $posts->count() }}</h1>
                             </div>
 
                         </div>
@@ -132,15 +132,23 @@
 
                     @foreach ($new_cars as $reserve)
 
-                        <div class="grid grid-cols-8 place-items-center font-poppins text-sm py-4 border-b border-layout-black bg-gray-200">
+                        <div class="grid grid-cols-8 place-items-center font-poppins text-sm py-4 border-b border-layout-black bg-gray-600">
 
-                            <h1 class="">{{ $reserve->id }}</h1>
+                            <h1 class="">
+                                {{ $reserve->id }}asdfasdfasdfasdf
+                            </h1>
 
-                            <h1>{{ $reserve->firstName }} {{ $reserve->lastName }}</h1>
+                            <h1>
+                                {{ $reserve->firstName }} {{ $reserve->lastName }}
+                            </h1>
 
-                            <h1>{{ $reserve->email }}</h1>
+                            <h1>
+                                {{ $reserve->email }}
+                            </h1>
 
-                            <h1>{{ $reserve->mobile }}</h1>
+                            <h1>
+                                {{ $reserve->mobile }}
+                            </h1>
 
                             <div>
                                 <h1>
@@ -323,13 +331,13 @@
                                 </button>
 
                                 <a href=" "
-                                   class="bg-blue-500 px-2 py-1 rounded font-Rubik text-base focus:outline-none">
-                                   Upravit
+                                    class="bg-blue-500 px-2 py-1 rounded font-Rubik text-base focus:outline-none">
+                                    Upravit
                                 </a>
 
                                 <a href=" "
-                                   class="bg-layout-green px-2 py-1 rounded font-Rubik text-base focus:outline-none">
-                                   Ukázat
+                                    class="bg-layout-green px-2 py-1 rounded font-Rubik text-base focus:outline-none">
+                                    Ukázat
                                 </a>
 
                             </div>
@@ -340,7 +348,7 @@
             </div>
 
         </div>
-</div>
+    </div>
 
 
 

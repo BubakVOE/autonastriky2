@@ -28,9 +28,7 @@ use App\Http\Controllers\user\ServicesController;
 
 
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth'])->name('dashboard-index');
+
 
 require __DIR__.'/auth.php';
 

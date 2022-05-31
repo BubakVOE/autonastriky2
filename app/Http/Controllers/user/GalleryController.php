@@ -22,10 +22,9 @@ class GalleryController extends Controller
     {
 
         $post = Post::find($id);
-        dd($post);
 
         return view('pages.user.gallery.show',[
-
+            'post' => $post,
         ]);
     }
 

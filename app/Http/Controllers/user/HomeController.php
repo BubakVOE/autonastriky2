@@ -15,7 +15,7 @@ class HomeController extends Controller
 
         $completedCars = Reservation::where('done', 1)->get();
 
-        $posts = Post::all();
+        $posts = Post::take(3)->get();
 
         return view('pages.user.index',[
             'newCars' => $newCars,

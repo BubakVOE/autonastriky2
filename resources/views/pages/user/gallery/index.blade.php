@@ -4,8 +4,9 @@
 
     <div class="pt-32 pb-24 bg-layout-gray ">
         <div class="w-11/12 xl:w-9/12 mx-auto shadow-xl bg-layout-lightgray py-10 rounded-2xl xl:mt-20 ">
+            
             <div class="text-center ">
-                <h1 class="text-lg tracking-tight font-extrabold sm:text-1xl md:text-4xl uppercase font-Rubik text-layout-red ">
+                <h1 class="text-xl tracking-wider xl:tracking-tight font-extrabold sm:text-1xl md:text-4xl uppercase font-Rubik text-layout-red ">
                     Hotové auta
                 </h1>
             </div>
@@ -15,8 +16,6 @@
                     <x-user.gallery.gallery :post='$post'/>
                 @endforeach
             </div>
-
-
 
         </div>
     </div>
