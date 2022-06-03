@@ -3,182 +3,110 @@
 
     <section class="pt-48 pb-20 bg-layout-gray ">
 
-        <div class="rounded-xl shadow-xl max-w-2xl mx-auto py-16 px-4 sm:px-6 lg:max-w-7xl lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 bg-layout-lightgray">
-            <div class="lg:col-span-2 lg:border-r lg:border-black-custom lg:pr-8 flex items-center flex-row">
+        <div class="rounded-xl relative shadow-xl max-w-2xl mx-auto py-16 px-4 sm:px-6 lg:max-w-7xl lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 bg-layout-lightgray">
 
-                <img
-                src="{{ asset('posts/thumbNail/'.$post->cover) }}"
-                class="w-24 h-24 mr-5 rounded-full ">
+            <div class="absolute text-xs top-2 left-2 grid grid-cols-2 gap-x-2 text-gray-300">
+                <h1>vytvořeno</h1>
+                <h1>{{ date('jS M Y', strtotime($post->created_at)) }}</h1>
 
-                <h1 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
-                    {{ $post->car }}
-                </h1>
-
+                <h1>aktualizováno</h1>
+                <h1> {{ date('jS M Y', strtotime($post->updated_at)) }}</h1>
             </div>
 
-            <!-- Options -->
+            <div class="lg:col-span-2 lg:border-r lg:border-black-custom lg:pr-8 flex items-center flex-row">
+                <img
+                src="{{ asset('posts/thumbNail/'.$post->cover) }}"
+                class="w-40 h-40 mr-5 rounded-full object-center object-cover">
+
+                <h1 class="text-5xl font-extrabold font-Rubik text-white uppercase">
+                    {{ $post->car }} {{ $post->type }}
+                </h1>
+            </div>
+
             <div class="mt-4 lg:mt-0 lg:row-span-3">
-                <!-- Reviews -->
-                <div >
-                    <h3 class="text-md font-Raleway font-bold text-gray-900 ">Obtížnost</h3>
-
-                    <div class="flex items-center mt-5 pl-4">
-                        <div class="flex items-center space-x-2">
-                            obtížnost
-                            <h2>-</h2>
-                            <h1>poggers</h1>
-                        </div>
-                    </div>
-
-                </div>
-
                 <div class="mt-10">
 
-                    <div>
-                        <h3 class="text-md font-Raleway font-bold text-gray-900">Další informace</h3>
-
-                        <fieldset class="mt-4 pl-4">
-                            <div class="flex flex-col ">
-
-                                <div class="relative focus:outline-none">
-                                    <h1> nástřiky</h1>
-                                    <h1>, podvozek</h1>
-                                    <h1>, umytí</h1>
-                                </div>
-
-                                <div class="relative focus:outline-none mt-4">
-                                    <h1 class="">
-                                        mana
-                                    </h1>
-                                </div>
-
-
-                            </div>
-                        </fieldset>
-                    </div>
-
-                    <!-- Sizes -->
                     <div class="mt-10">
                         <div class="flex items-center justify-between">
-                            <h3 class="text-md font-Raleway font-bold text-gray-900">Skiny</h3>
+                            <h3 class="text-md font-Raleway font-bold text-gray-900">Další obrázky</h3>
                         </div>
 
-                        <fieldset class="mt-4 pl-4">
+                        <div class="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4 mt-4 pl-4">
 
-                            <div class="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4 ">
-                                <img
-                                src="{{ asset('posts/thumbNail/'.$post->cover) }}"
-                                class="w-24 mr-5 rounded-full "
-                                >                    <img
-                                src="{{ asset('posts/thumbNail/'.$post->cover) }}"
-                                class="w-24 mr-5 rounded-full "
-                                >                    <img
-                                src="{{ asset('posts/thumbNail/'.$post->cover) }}"
-                                class="w-24 mr-5 rounded-full "
-                                >                    <img
-                                src="{{ asset('posts/thumbNail/'.$post->cover) }}"
-                                class="w-24 mr-5 rounded-full "
-                                >
-                                {{-- @foreach ( $champData['skins'] as $test)
+                            @foreach ($imagesData as $image)
+                                <img src="{{ asset('posts/images/'.$image->image) }}" alt="">
+                            @endforeach
 
-                                    <label class="relative rounded-md md:p-1 focus:outline-none sm:flex-1 sm:py-6 bg-black-lighter">
-                                        <input type="radio" name="size-choice" value="XS" class="sr-only" aria-labelledby="size-choice-1-label">
-                                            <img class="rounded-sm" src="{{ 'https://ddragon.leagueoflegends.com/cdn/img/champion/loading/'.$champion->nickname.'_'.$test['num'].'.jpg' }}" alt="">
+                        </div>
 
-                                        <div class="absolute -inset-px rounded-md pointer-events-none" aria-hidden="true"></div>
-                                    </label>
-                                @endforeach --}}
-
-                            </div>
-
-                        </fieldset>
-                    </div>
-
-                    <div class="text-center mt-10 md:mt-20 font-medium text-white  focus:outline-none">
-                        <a href="" class="bg-black-lighter  rounded-md hover:bg-black-custom cursor-pointer w-full  py-3 px-8 text-base ">
-                            Prohlédnout si Splash obrázky
-                        </a>
                     </div>
 
                 </div>
             </div>
 
             <div class="py-10 lg:pt-6 lg:pb-16 lg:col-start-1 lg:col-span-2 lg:border-r lg:border-black-custom lg:pr-8">
-            <!-- Description and details -->
-                <div>
-                    <h3 class="text-md font-bold font-Raleway text-gray-900">Příběh</h3>
 
-                    <div class="space-y-6 pl-4">
-                        <p class="text-base text-gray-900">
-                            data
+                <div>
+                    <h1 class="text-md font-bold font-Raleway text-gray-900">
+                        Popisek
+                    </h1>
+
+                    <div class="space-y-6 pl-4  ">
+                        <p class="text-base text-gray-900 w-6/12 flex-wrap">
+                            {{ $post->description }}
                         </p>
                     </div>
                 </div>
 
                 <div class="mt-10">
-                    <h3 class="text-md font-bold font-Raleway text-gray-900">Spells</h3>
+                    <div>
+                        <h3 class="text-md font-Raleway font-bold text-gray-900">
+                            Provedené služby
+                        </h3>
 
-                    <div class="mt-4">
-                        {{-- <ul role="list" class="pl-4 list-disc text-sm space-y-5">
-                            <li class="text-gray-800 list-none flex items-center ">
-                                <img class="rounded-md" src="{{ 'https://ddragon.leagueoflegends.com/cdn/'.env('patch').'/img/passive/'.$champData['passive']['image']['full'] }}">
+                        <div class="mt-4 pl-4 flex flex-col ">
 
-                                <div class="flex flex-col ml-4">
-                                    <p class="">{{ $champData['passive']['description'] }}</p>
-                                </div>
-                            </li>
+                            <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-5">
 
-                            <li class="text-gray-800 list-none flex items-center none">
-                                <img class="rounded-md" src="{{ 'https://ddragon.leagueoflegends.com/cdn/'.env('patch').'/img/spell/'.$champData['spells'][0]['image']['full'] }}">
-
-                                <div class="flex flex-col ml-4">
-                                    <p class="">{{ $champData['spells'][0]['description'] }}</p>
-                                    <div class="flex flex-row space-x-2 text-black-custom font-bold mt-1">
-                                        <h1>Mana cost:</h1>
-                                        <h1 class="">{{ $champData['spells'][0]['costBurn'] }}</h1>
+                                <dt class="hover:scale-105 transform transition duration-500 ease-in-out flex items-center justify-center bg-layout-gray shadow-inner py-2 rounded-lg w-11/12">
+                                    <div class="text-layout-green flex items-center justify-center h-12 w-12 rounded-full bg-layout-lightgray ">
+                                        <svg class="h-10 w-10 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                                        </svg>
                                     </div>
-                                </div>
-                            </li>
 
-                            <li class="text-gray-800 list-none flex items-center ">
-                                <img class="rounded-md" src="{{ 'https://ddragon.leagueoflegends.com/cdn/'.env('patch').'/img/spell/'.$champData['spells'][1]['image']['full'] }}">
+                                    <p class="ml-16 text-lg leading-6 font-bold text-layout-green ">Výměna pneumatik</p>
+                                </dt>
 
-                                <div class="flex flex-col ml-4">
-                                    <p class="">{{ $champData['spells'][1]['description'] }}</p>
-                                    <div class="flex flex-row space-x-2 text-black-custom font-bold mt-1">
-                                        <h1>Mana cost:</h1>
-                                        <h1 class="">{{ $champData['spells'][1]['costBurn'] }}</h1>
+                                <dt class="hover:scale-105 transform transition duration-500 ease-in-out flex items-center justify-center bg-layout-gray shadow-inner py-2 rounded-lg w-11/12">
+                                    <div class="text-layout-green flex items-center justify-center h-12 w-12 rounded-full bg-layout-lightgray ">
+                                        <svg class="h-10 w-10 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                                        </svg>
                                     </div>
-                                </div>
-                            </li>
 
-                            <li class="text-gray-800 list-none flex items-center ">
-                                <img class="rounded-md" src="{{ 'https://ddragon.leagueoflegends.com/cdn/'.env('patch').'/img/spell/'.$champData['spells'][2]['image']['full'] }}">
+                                    <p class="ml-16 text-lg leading-6 font-bold text-layout-green ">Výměna pneumatik</p>
+                                </dt>
 
-                                <div class="flex flex-col ml-4">
-                                    <p class="">{{ $champData['spells'][2]['description'] }}</p>
-                                    <div class="flex flex-row space-x-2 text-black-custom font-bold mt-1">
-                                        <h1>Mana cost:</h1>
-                                        <h1 class="">{{ $champData['spells'][2]['costBurn'] }}</h1>
+                                <dt class="hover:scale-105 transform transition duration-500 ease-in-out flex items-center justify-center bg-layout-gray shadow-inner py-2 rounded-lg w-11/12">
+                                    <div class="text-layout-green flex items-center justify-center h-12 w-12 rounded-full bg-layout-lightgray ">
+                                        <svg class="h-10 w-10 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                                        </svg>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="text-gray-800 list-none flex items-center ">
-                                <img class="rounded-md" src="{{ 'https://ddragon.leagueoflegends.com/cdn/'.env('patch').'/img/spell/'.$champData['spells'][3]['image']['full'] }}">
 
-                                <div class="flex flex-col ml-4">
-                                    <p class="">{{ $champData['spells'][3]['description'] }}</p>
-                                    <div class="flex flex-row space-x-2 text-black-custom font-bold mt-1">
-                                        <h1>Mana cost:</h1>
-                                        <h1 class=" ">{{ $champData['spells'][3]['costBurn'] }}</h1>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul> --}}
+                                    <p class="ml-16 text-lg leading-6 font-bold text-layout-green ">Výměna pneumatik</p>
+                                </dt>
+
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
 
             </div>
+
         </div>
 
     </section>

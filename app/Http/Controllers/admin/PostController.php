@@ -71,8 +71,13 @@ class PostController extends Controller
     {
         $post = Post::find($id);
 
+        $images = Galerie::where('post_id', $id)->get();
+
+
+
         return view('pages.dashboard.post.edit', [
             'post' => $post,
+            'images' => $images,
         ]);
     }
 

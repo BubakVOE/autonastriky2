@@ -266,7 +266,7 @@
                     <h1 class="text-white pb-2 ">Galerie</h1>
 
                     <a  class="flex items-center justify-center relative left-48 bottom-4 border-2 border-layout-green text-layout-green group px-4 py-1 "
-                        href="{{ route('galerie.create') }}">
+                        href="{{ route('post.create') }}">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 group-hover:bg-layout-green group-hover:text-layout-red rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -317,26 +317,26 @@
 
                             <h1>{{ $post->car }}_{{ $post->type }}</h1>
 
-                            <h1 class="w-24 overflow-auto">{{ $post->description }}</h1>
+                            <h1 class="w-24 h-20 overflow-auto flex items-center justify-center">{{ $post->description }}</h1>
 
                             <h1>{{ date('jS M Y', strtotime($post->created_at)) }}</h1>
 
                             <h1>{{ date('jS M Y', strtotime($post->updated_at)) }}</h1>
 
-                            <div class="p-2 flex flex-col items-center justify-center space-y-1 w-20 mx-auto bg-layout-white">
+                            <div class="p-2 flex flex-col items-center justify-center space-y-1 w-20 mx-auto ">
 
-                                <button class="bg-layout-red px-2 py-1 rounded font-Rubik text-base focus:outline-none"
+                                <button class="bg-layout-red px-2 py-1 rounded font-Rubik text-base focus:outline-none text-black"
                                         type="submit" >
                                     Smazat
                                 </button>
 
-                                <a href=" "
-                                    class="bg-blue-500 px-2 py-1 rounded font-Rubik text-base focus:outline-none">
+                                <a href="{{ route('post.edit', $post->id) }}"
+                                    class="bg-blue-500 px-2 py-1 rounded font-Rubik text-base focus:outline-none text-black">
                                     Upravit
                                 </a>
 
-                                <a href=" "
-                                    class="bg-layout-green px-2 py-1 rounded font-Rubik text-base focus:outline-none">
+                                <a href="{{ route('gallery-show', $post->id) }}"
+                                    class="bg-layout-green px-3 py-1 rounded font-Rubik text-base focus:outline-none text-black">
                                     Ukázat
                                 </a>
 

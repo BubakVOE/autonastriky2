@@ -2,12 +2,12 @@
 
 @section('content')
 
-    <div class="mt-20">
+    <div class="pt-20 bg-layout-gray">
         <div class="md:py-20 m-auto flex items-center w-full md:w-11/12 md:px-2 p-4 ">
             <div class="h-full max-w-md mx-auto rounded-lg overflow-hidden md:max-w-2xl md:w-9/12 w-full bg-gradient-to-br from-own-orange to-gradient-red">
                 <div class="">
 
-                    <form   class="w-full px-6 space-y-6 sm:px-10 sm:space-y-8"
+                    <form   class="w-full px-6 space-y-6 sm:px-10 sm:space-y-8 bg-layout-lightgray"
                             method="POST"
                             action="{{ route('register') }}">
 

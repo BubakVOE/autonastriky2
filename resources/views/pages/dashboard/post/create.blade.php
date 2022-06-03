@@ -7,7 +7,7 @@
             <h1 class="text-2xl font-Rubik font-bold text-layout-red mb-3 uppercase">Přidat fotografie</h1>
 
             <form
-                action="{{ route('galerie.store') }}"
+                action="{{ route('post.store') }}"
                 method="post"
                 enctype="multipart/form-data"
                 class="h-11/12 p-14 rounded-md flex flex-col items-center justify-center bg-layout-lightgray  ">
