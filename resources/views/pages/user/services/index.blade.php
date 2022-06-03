@@ -4,7 +4,7 @@
     <div class="pt-32 pb-24 bg-layout-gray ">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h1 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl font-Rubik">Služby</h1>
+                <h1 class="mt-2 text-3xl leading-8 font-extrabold uppercase text-white sm:text-4xl font-Rubik">Služby</h1>
                 <p class="mt-4 max-w-2xl text-xl text-gray-200 lg:mx-auto">Veškeré služby vám provedeme na jednom místěm, bez zbytečných komplikací a starostí navíc</p>
             </div>
 

@@ -11,38 +11,36 @@
         <div class="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8 m-10   ">
 
             @foreach ($posts as $post)
-                <a href="{{ route('gallery-show',[$post->id, $post->city]) }}">
+                <a href="{{ route('gallery-show',[$post->id, $post->city]) }}"
+                    class="relative grid grid-cols-1 place-items-center lg:h-96 bg-layout-red py-3 rounded-md space-y-1 transition duration-500 ease-in-out border border-white hover:shadow-2xl">
 
-                    <div class="relative lg:flex lg:items-center lg:justify-center group flex flex-col lg:h-96 bg-layout-red py-3 rounded-md space-y-1 transition duration-500 ease-in-out border border-white">
+                    <div class="mb-2">
+                        <h2 class="text-xl font-bold text-white font-Rubik sm:text-2xl sm:truncate text-center uppercase">
+                            {{ $post->car }} {{ $post->type }}
+                        </h2>
+                    </div>
 
-                        <div>
-                            <h2 class="text-xl font-bold text-white font-Rubik sm:text-2xl sm:truncate text-center uppercase">
-                                {{ $post->car }} {{ $post->type }}
-                            </h2>
-                        </div>
+                    <div class="relative ">
+                        <img src="{{ asset('posts/thumbNail/'.$post->cover) }}" style="width: 280px; height: 280px" class="object-center object-cover rounded-md">
 
-                        <div class="relative ">
-                            <img src="{{ asset('posts/thumbNail/'.$post->cover) }}" style="width: 280px; height: 280px" class="object-center object-cover rounded-md">
+                        <div class="absolute left-0 top-0 space-y-1 ">
+                            <div class="rounded-tl-md bg-opacity-60 bg-red-100 p-1 flex items-center text-sm text-black  group-hover:bg-opacity-100 transition duration-500 ease-in-out">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-black transition duration-500 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
+                                    <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+                                </svg>
+                                Nově přídáno
+                            </div>
 
-                            <div class="absolute left-0 top-0 space-y-1 ">
-                                <div class="rounded-tl-md bg-opacity-60 bg-red-100 p-1 flex items-center text-sm text-black  group-hover:bg-opacity-100 transition duration-500 ease-in-out">
-                                    <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-black transition duration-500 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
-                                        <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
-                                    </svg>
-                                    Nově přídáno
-                                </div>
-
-                                <div class="bg-opacity-60 bg-red-100 p-1 flex items-center text-sm text-black  group-hover:bg-opacity-100 transition duration-500 ease-in-out">
-                                    <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-black transition duration-500 ease-in-out" xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                                    </svg>
-                                    3D prohlídka
-                                </div>
+                            <div class="bg-opacity-60 bg-red-100 p-1 flex items-center text-sm text-black  group-hover:bg-opacity-100 transition duration-500 ease-in-out">
+                                <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-black transition duration-500 ease-in-out" xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                                </svg>
+                                3D prohlídka
                             </div>
                         </div>
-
                     </div>
+
                 </a>
             @endforeach
 

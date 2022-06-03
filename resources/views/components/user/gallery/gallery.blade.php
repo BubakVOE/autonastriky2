@@ -5,6 +5,7 @@
 
     <div>
         <img src="{{ asset('posts/thumbNail/'.$post->cover) }}" style="width: 250px; height: 200px" class="object-center object-cover">
+
     </div>
 
     <div class="text-center">
